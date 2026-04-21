@@ -3,10 +3,9 @@ const http = require('http');
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Hola Mundo desde Docker 🚀');
+  res.end('Hola Mundo haciendo CI/CD 🚀');
 });
 
 server.listen(3000, () => {
   console.log('Servidor corriendo en http://localhost:3000');
 });
-
-res.end('Hola Mundo CI/CD 🚀 v2');
